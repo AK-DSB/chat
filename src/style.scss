@@ -1,3 +1,21 @@
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width: 1200px) {
+        @content
+    }
+}
+
 .formContainer {
     background-color: #a7bcff;
     height: 100vh;
@@ -260,7 +278,7 @@
                             p {
                                 background-color: #8da4f1;
                                 color: white;
-                                border-radius: 10px 10px 10px 0;
+                                border-radius: 10px 0 10px 10px;
                             }
                         }
                     }
